@@ -86,7 +86,7 @@ const getAllCourses = async (
 const getCourseById = async (id: string): Promise<ICourse | null> => {
   const result = await Course.findById(id)
     .populate("modules")
-    .populate("reviews")
+    // .populate("reviews")
     .populate("category_id")
     .populate("instructor_id");
 

@@ -17,7 +17,7 @@ router.get("/:id", CourseController.getCourseById);
 // UPDATE course
 router.patch("/:id", CourseController.updateCourse);
 
-// DELETE course (soft delete or hard delete depending on controller logic)
+// DELETE course 
 router.delete("/:id", CourseController.deleteCourse);
 
 export const CourseRoutes = router;

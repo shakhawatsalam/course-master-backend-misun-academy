@@ -108,10 +108,10 @@ courseSchema.virtual("modules", {
   foreignField: "course_id",
 });
 
-courseSchema.virtual("reviews", {
-  ref: "Review",
-  localField: "_id",
-  foreignField: "course_id",
-});
+// courseSchema.virtual("reviews", {
+//   ref: "Review",
+//   localField: "_id",
+//   foreignField: "course_id",
+// });
 
 export const Course = model<ICourse>("Course", courseSchema);
